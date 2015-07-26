@@ -1,0 +1,528 @@
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Use CONSTANT declarations to define output port addresses
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-PORT_A
+   OPERAND2-00
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Use CONSTANT declarations to define leds sequence
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_SEQUENCE_1
+   OPERAND2-01
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_SEQUENCE_2
+   OPERAND2-02
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_SEQUENCE_3
+   OPERAND2-04
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_SEQUENCE_4
+   OPERAND2-08
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_SEQUENCE_5
+   OPERAND2-10
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_SEQUENCE_6
+   OPERAND2-20
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_SEQUENCE_7
+   OPERAND2-40
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-LED_SEQUENCE_8
+   OPERAND2-80
+    COMMENT-;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-ADDRESS
+   OPERAND1-000
+   OPERAND2-
+    COMMENT-; Programs always start at reset vector 0
+    ADDRESS-000
+      LABEL-
+INSTRUCTION-DISABLE
+   OPERAND1-INTERRUPT
+   OPERAND2-
+    COMMENT-; If using interrupts, be sure to enable the INTERRUPT input
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-001
+      LABEL-BEGIN
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; <<< your code here >>>
+    ADDRESS-001
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-LED_SEQUENCE_1
+    COMMENT-
+    ADDRESS-002
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-PORT_A
+    COMMENT-
+    ADDRESS-003
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay
+   OPERAND2-
+    COMMENT-
+    ADDRESS-004
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-LED_SEQUENCE_2
+    COMMENT-
+    ADDRESS-005
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-PORT_A
+    COMMENT-
+    ADDRESS-006
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay
+   OPERAND2-
+    COMMENT-
+    ADDRESS-007
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-LED_SEQUENCE_3
+    COMMENT-
+    ADDRESS-008
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-PORT_A
+    COMMENT-
+    ADDRESS-009
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay
+   OPERAND2-
+    COMMENT-
+    ADDRESS-00A
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-LED_SEQUENCE_4
+    COMMENT-
+    ADDRESS-00B
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-PORT_A
+    COMMENT-
+    ADDRESS-00C
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay
+   OPERAND2-
+    COMMENT-
+    ADDRESS-00D
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-LED_SEQUENCE_5
+    COMMENT-
+    ADDRESS-00E
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-PORT_A
+    COMMENT-
+    ADDRESS-00F
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay
+   OPERAND2-
+    COMMENT-
+    ADDRESS-010
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-LED_SEQUENCE_6
+    COMMENT-
+    ADDRESS-011
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-PORT_A
+    COMMENT-
+    ADDRESS-012
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay
+   OPERAND2-
+    COMMENT-
+    ADDRESS-013
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-LED_SEQUENCE_7
+    COMMENT-
+    ADDRESS-014
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-PORT_A
+    COMMENT-
+    ADDRESS-015
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay
+   OPERAND2-
+    COMMENT-
+    ADDRESS-016
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-LED_SEQUENCE_8
+    COMMENT-
+    ADDRESS-017
+      LABEL-
+INSTRUCTION-OUTPUT
+   OPERAND1-s0
+   OPERAND2-PORT_A
+    COMMENT-
+    ADDRESS-018
+      LABEL-
+INSTRUCTION-CALL
+   OPERAND1-delay
+   OPERAND2-
+    COMMENT-
+    ADDRESS-019
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-BEGIN
+   OPERAND2-
+    COMMENT-; Embedded applications never end
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Delay routine (~0.5s.)
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; PicoBlaze requires 2 clocks per instruction
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; 2 + (4 + (4 + 4*256 + 4) * 256 + 4)*DELAY_LOOP + 2 =
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; 500ms = (4 + 264200*DELAY_LOOP )*(1/50MHz)
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; DELAY_LOOP = 0x5E
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; Use CONSTANT declarations to time delay refinition
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-CONSTANT
+   OPERAND1-DELAY_LOOP
+   OPERAND2-5E
+    COMMENT-; Loop delay
+    ADDRESS-01A
+      LABEL-delay
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-01A
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s2
+   OPERAND2-00
+    COMMENT-; 2
+    ADDRESS-01B
+      LABEL-rpt3
+INSTRUCTION-ADD
+   OPERAND1-s2
+   OPERAND2-01
+    COMMENT-; 2---------------------------------------------|
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;  ---------------------------------------------|
+    ADDRESS-01C
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s1
+   OPERAND2-00
+    COMMENT-; 2---------------------------------------------|
+    ADDRESS-01D
+      LABEL-rpt2
+INSTRUCTION-ADD
+   OPERAND1-s1
+   OPERAND2-01
+    COMMENT-; 2-------------------------------------|
+    ADDRESS-01E
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;  -------------------------------------|
+    ADDRESS-01E
+      LABEL-
+INSTRUCTION-LOAD
+   OPERAND1-s0
+   OPERAND2-00
+    COMMENT-; 2-------------------------------------|
+    ADDRESS-01F
+      LABEL-rpt1
+INSTRUCTION-ADD
+   OPERAND1-s0
+   OPERAND2-01
+    COMMENT-; 2 ---------------|
+    ADDRESS-020
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-rpt1
+    COMMENT-; 2 ----------4*256|
+    ADDRESS-021
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;  -------------------------------------|
+    ADDRESS-021
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s1
+   OPERAND2-00
+    COMMENT-; 2-------------------------------------|
+    ADDRESS-022
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-rpt2
+    COMMENT-; 2----------------(4 + 4*256 + 4) * 256|
+    ADDRESS-023
+      LABEL-
+INSTRUCTION-COMPARE
+   OPERAND1-s2
+   OPERAND2-DELAY_LOOP
+    COMMENT-; 2---------------------------------------------|
+    ADDRESS-024
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-NZ
+   OPERAND2-rpt3
+    COMMENT-; 2---(4 + (4 + 4*256 + 4) * 256 + 4)*DELAY_LOOP|
+    ADDRESS-025
+      LABEL-
+INSTRUCTION-RETURN
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; 2
+    ADDRESS-026
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-026
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;; An Interrupt Service Routine (ISR) is required if using interrupts
+    ADDRESS-026
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;; Interrupts are automatically disabled when an interrupt is recognized
+    ADDRESS-026
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;; Never re-enable interrupts during the ISR
+    ADDRESS-026
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;; Use RETURNI DISABLE to leave interrupts disabled
+    ADDRESS-026
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-026
+      LABEL-ISR
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-
+    ADDRESS-026
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-; <<< your interrupt code here >>>
+    ADDRESS-026
+      LABEL-
+INSTRUCTION-RETURNI
+   OPERAND1-ENABLE
+   OPERAND2-
+    COMMENT-; Return from interrupt service routine
+    ADDRESS-027
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-027
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;; Interrupt service routine vector.
+    ADDRESS-027
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-ADDRESS
+   OPERAND1-3FF
+   OPERAND2-
+    COMMENT-; Interrupt vector is located at highest instruction address
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-JUMP
+   OPERAND1-ISR
+   OPERAND2-
+    COMMENT-; Jump to interrupt service routine, ISR
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;
+    ADDRESS-3FF
+      LABEL-
+INSTRUCTION-
+   OPERAND1-
+   OPERAND2-
+    COMMENT-;;============================================================================

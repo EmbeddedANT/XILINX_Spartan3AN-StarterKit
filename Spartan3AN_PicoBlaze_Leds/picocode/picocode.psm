@@ -1,0 +1,113 @@
+; Use CONSTANT declarations to define output port addresses
+CONSTANT PORT_A			   	, 00		;
+
+; Use CONSTANT declarations to define leds sequence
+CONSTANT LED_SEQUENCE_1    	, 01    	; 
+CONSTANT LED_SEQUENCE_2    	, 02    	; 
+CONSTANT LED_SEQUENCE_3    	, 04    	; 
+CONSTANT LED_SEQUENCE_4    	, 08    	; 
+CONSTANT LED_SEQUENCE_5    	, 10    	; 
+CONSTANT LED_SEQUENCE_6    	, 20    	; 
+CONSTANT LED_SEQUENCE_7    	, 40    	; 
+CONSTANT LED_SEQUENCE_8    	, 80    	; 
+
+
+;;============================================================================
+;;
+;;============================================================================
+ADDRESS 000 		; Programs always start at reset vector 0
+DISABLE INTERRUPT 	; If using interrupts, be sure to enable the INTERRUPT input
+;;============================================================================
+;;
+;;============================================================================
+BEGIN:
+; <<< your code here >>>
+
+LOAD 	s0, 	LED_SEQUENCE_1
+OUTPUT 	s0, 	PORT_A
+CALL	delay
+LOAD 	s0, 	LED_SEQUENCE_2
+OUTPUT 	s0, 	PORT_A
+CALL	delay
+LOAD 	s0, 	LED_SEQUENCE_3
+OUTPUT 	s0, 	PORT_A
+CALL	delay
+LOAD 	s0, 	LED_SEQUENCE_4
+OUTPUT 	s0, 	PORT_A
+CALL	delay
+LOAD 	s0, 	LED_SEQUENCE_5
+OUTPUT 	s0, 	PORT_A
+CALL	delay
+LOAD 	s0, 	LED_SEQUENCE_6
+OUTPUT 	s0, 	PORT_A
+CALL	delay
+LOAD 	s0, 	LED_SEQUENCE_7
+OUTPUT 	s0, 	PORT_A
+CALL	delay
+LOAD 	s0, 	LED_SEQUENCE_8
+OUTPUT 	s0, 	PORT_A
+CALL	delay
+
+
+JUMP BEGIN ; Embedded applications never end
+
+
+
+;;============================================================================
+; Delay routine (~0.5s.)
+;;============================================================================
+; PicoBlaze requires 2 clocks per instruction
+; 2 + (4 + (4 + 4*256 + 4) * 256 + 4)*DELAY_LOOP + 2 = 
+; 500ms = (4 + 264200*DELAY_LOOP )*(1/50MHz)
+; DELAY_LOOP = 0x5E
+
+; Use CONSTANT declarations to time delay refinition
+CONSTANT DELAY_LOOP			, 5E   		; Loop delay
+
+delay:
+       LOAD s2, 00				; 2
+rpt3:  ADD s2, 01				; 2---------------------------------------------|
+								;  ---------------------------------------------|
+       LOAD s1, 00				; 2---------------------------------------------|
+rpt2:  ADD s1, 01				; 2-------------------------------------|
+								;  -------------------------------------|
+       LOAD s0, 00				; 2-------------------------------------|
+rpt1:  ADD s0, 01				; 2 ---------------|					 
+       JUMP NZ,rpt1				; 2 ----------4*256|	
+								;  -------------------------------------|
+       COMPARE s1, 00			; 2-------------------------------------|
+       JUMP NZ,rpt2				; 2----------------(4 + 4*256 + 4) * 256|
+
+       COMPARE s2, DELAY_LOOP	; 2---------------------------------------------|
+       JUMP NZ,rpt3 			; 2---(4 + (4 + 4*256 + 4) * 256 + 4)*DELAY_LOOP|
+      
+       RETURN					; 2
+	   
+;;============================================================================
+;; An Interrupt Service Routine (ISR) is required if using interrupts
+;; Interrupts are automatically disabled when an interrupt is recognized
+;; Never re-enable interrupts during the ISR
+;; Use RETURNI DISABLE to leave interrupts disabled
+;;============================================================================
+ISR: 
+; <<< your interrupt code here >>>
+
+
+RETURNI ENABLE ; Return from interrupt service routine
+
+
+
+;;============================================================================
+;; Interrupt service routine vector.
+;;============================================================================
+ADDRESS 3FF ; Interrupt vector is located at highest instruction address
+JUMP ISR ; Jump to interrupt service routine, ISR
+
+
+
+
+
+
+;;============================================================================
+;;
+;;============================================================================

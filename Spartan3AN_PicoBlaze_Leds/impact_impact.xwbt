@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Xilinx\Proyectos\Spartan3AN_PicoBlaze_Leds\impact.xsl
+OUTFILE=C:\Xilinx\Proyectos\Spartan3AN_PicoBlaze_Leds\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Xilinx\Proyectos\Spartan3AN_PicoBlaze_Leds
+LICENSE=iMPACT
+USER_INFO=iMPACT
