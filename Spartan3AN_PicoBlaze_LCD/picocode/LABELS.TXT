@@ -1,0 +1,25 @@
+Table of addresses and their specified labels.
+
+001  BEGIN
+086  LOOP
+08A  delay_1us
+08B  wait_1us
+08E  delay_40us
+08F  wait_40us
+093  delay_1ms
+094  wait_1ms
+098  delay_20ms
+099  wait_20ms
+09D  delay_1s
+09E  wait_1s
+0A2  delay_ms
+0A6  LCD_pulse_E
+0AC  LCD_write_inst4
+0B1  LCD_write_inst8
+0C0  LCD_write_data
+0D3  LCD_reset
+0E6  LCD_clear
+0EB  LCD_cursor
+0F1  set_line2
+0F5  LCD_shift_left
+0F8  ISR

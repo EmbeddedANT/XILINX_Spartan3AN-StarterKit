@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\ernes\Dropbox\Proyectos\Xilinx\XILINX_Spartan3AN-StarterKit\Spartan3AN_PicoBlaze_LCD\Spartan3AN_PicoBlaze_LCD.ncd
+OUTFILE=C:\Users\ernes\Dropbox\Proyectos\Xilinx\XILINX_Spartan3AN-StarterKit\Spartan3AN_PicoBlaze_LCD\Spartan3AN_PicoBlaze_LCD.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-4fgg484
+WORKINGDIR=C:\Users\ernes\Dropbox\Proyectos\Xilinx\XILINX_Spartan3AN-StarterKit\Spartan3AN_PicoBlaze_LCD
+LICENSE=WebPack
+USER_INFO=210922565_0_0_644
