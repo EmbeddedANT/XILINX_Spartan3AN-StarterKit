@@ -1,3 +1,23 @@
+; *
+; * picocode.psm -  LED Control
+; *
+; *      ___       _         _   _       _ ___ _ _ ___
+; *	| __._ _ _| |_ ___ _| |_| |___ _| | . | \ |_ _|
+; *	| _>| ' ' | . / ._/ . / . / ._/ . |   |   || |
+; *	|___|_|_|_|___\___\___\___\___\___|_|_|_\_||_|
+; *
+; *
+; *  Created on	: 20/07/2015
+; *      Author	: Ernesto Andres Rincon Cruz
+; *      Web		: www.embeddedant.org
+; *		  Device : XC3S700AN - 4FGG484
+; *		  Board  : Spartan-3AN Starter Kit.
+; *
+; *	 Based on Ken Chapman code v1.00 - 4th January 2006
+; *      Revision History:
+; *			Rev 1.0.0 - (ErnestoARC) First release 16/08/2015.
+; *
+;//////////////////////////////////////////////////////////////////////////////////
 ; Use CONSTANT declarations to define output port addresses
 CONSTANT PORT_A			   	, 00		;
 

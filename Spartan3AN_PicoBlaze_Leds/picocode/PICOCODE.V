@@ -15,7 +15,7 @@
 //Command: kcpsm3 picocode.psm
 //Device: Spartan-3, Spartan-3E, Virtex-II, and Virtex-II Pro FPGAs
 //Design Name: picocode
-//Generated 26Jul2015-18:11:05.
+//Generated 16Aug2015-19:51:29.
 //Purpose:
 // picocode verilog program definition.
 //

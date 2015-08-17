@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Xilinx\Proyectos\Spartan3AN_PicoBlaze_Leds\Spartan3AN_PicoBlaze_Leds.ncd
-OUTFILE=C:\Xilinx\Proyectos\Spartan3AN_PicoBlaze_Leds\Spartan3AN_PicoBlaze_Leds.bit
+INFILE=C:\Users\ernes\Dropbox\Proyectos\Xilinx\XILINX_Spartan3AN-StarterKit\Spartan3AN_PicoBlaze_Leds\Spartan3AN_PicoBlaze_Leds.ncd
+OUTFILE=C:\Users\ernes\Dropbox\Proyectos\Xilinx\XILINX_Spartan3AN-StarterKit\Spartan3AN_PicoBlaze_Leds\Spartan3AN_PicoBlaze_Leds.bit
 FAMILY=Spartan3A and Spartan3AN
 PART=xc3s700an-4fgg484
-WORKINGDIR=C:\Xilinx\Proyectos\Spartan3AN_PicoBlaze_Leds
+WORKINGDIR=C:\Users\ernes\Dropbox\Proyectos\Xilinx\XILINX_Spartan3AN-StarterKit\Spartan3AN_PicoBlaze_Leds
 LICENSE=WebPack
 USER_INFO=210922565_0_0_644

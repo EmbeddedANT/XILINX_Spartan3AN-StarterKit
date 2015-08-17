@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-07-26T18:15:11</DateModified>
+  <DateModified>2015-08-17T11:29:59</DateModified>
   <ModuleName>Spartan3AN_PicoBlaze_Leds</ModuleName>
-  <SummaryTimeStamp>2015-07-26T17:00:32</SummaryTimeStamp>
-  <SavedFilePath>C:/Xilinx/Proyectos/Spartan3AN_PicoBlaze_Leds/iseconfig/Spartan3AN_PicoBlaze_Leds.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Xilinx/Proyectos/Spartan3AN_PicoBlaze_Leds\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2015-08-17T11:28:43</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/ernes/Dropbox/Proyectos/Xilinx/XILINX_Spartan3AN-StarterKit/Spartan3AN_PicoBlaze_Leds/iseconfig/Spartan3AN_PicoBlaze_Leds.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/ernes/Dropbox/Proyectos/Xilinx/XILINX_Spartan3AN-StarterKit/Spartan3AN_PicoBlaze_Leds\</ImplementationReportsDirectory>
   <DateInitialized>2015-07-19T20:41:02</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

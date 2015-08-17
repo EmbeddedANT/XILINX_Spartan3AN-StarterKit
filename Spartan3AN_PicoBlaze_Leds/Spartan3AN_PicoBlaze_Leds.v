@@ -11,8 +11,8 @@
  *  Created on	: 20/07/2015
  *      Author	: Ernesto Andres Rincon Cruz
  *      Web		: www.embeddedant.org
- *		  Device : EP4CE22F17C6N
- *		  Board  : DEO-NANO
+ *		  Device : XC3S700AN - 4FGG484
+ *		  Board  : Spartan-3AN Starter Kit.
  *
  *      Revision History:
  *			Rev 1.0.0 - (ErnestoARC) First release 19/06/2015.
